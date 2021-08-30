@@ -1,0 +1,52 @@
+body {
+    background-color: $Color-neutral;
+    width: 100vw;
+}
+.target {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 500px;
+    margin: 200px auto 0;
+    background-color: $Color-neutral;
+    &__section1{
+        @include card;
+        background-color: rgba($color: $Color-sedans, $alpha: .9);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        button{
+            color: $Color-sedans;
+        }
+    }
+    &__section2{
+        @include card;
+        background-color: rgba($color: $Color-suvs, $alpha: .9);
+        button{
+            color: $Color-suvs;
+        }
+    }
+    &__section3{
+        @include card;
+        background-color: rgba($color: $Color-luxury, $alpha: .9);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        button{
+            color: $Color-luxury;
+        }
+    }
+}
+@media screen and (max-width: 1001px) {
+    body{
+        height: 1400px;
+    }
+    .target{
+        flex-direction: column;
+        margin: 60px auto;
+        width: 333px;
+        grid-template-rows: 10% 25% 45% 25%;
+    }
+    .attribution {
+        display: block;
+        top: 100%;
+    }
+}
