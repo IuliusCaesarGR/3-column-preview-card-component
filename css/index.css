@@ -21,7 +21,8 @@ body {
   background-color: #f2f2f2;
 }
 .target__section1 {
-  width: 333px;
+  min-width: 333px;
+  max-width: 100%;
   height: 500px;
   padding: 35px 45px;
   display: grid;
@@ -33,6 +34,13 @@ body {
 @media screen and (max-width: 1001px) {
   .target__section1 {
     height: 400px;
+    grid-template-rows: 10% 18% 35% 30%;
+  }
+  .target__section1 span {
+    margin: 15px 0 0 0;
+  }
+  .target__section1 button {
+    margin: 10px 0 50px 0;
   }
 }
 .target__section1 h1 {
@@ -61,7 +69,8 @@ body {
   color: #e38826;
 }
 .target__section2 {
-  width: 333px;
+  min-width: 333px;
+  max-width: 100%;
   height: 500px;
   padding: 35px 45px;
   display: grid;
@@ -71,6 +80,13 @@ body {
 @media screen and (max-width: 1001px) {
   .target__section2 {
     height: 400px;
+    grid-template-rows: 10% 18% 35% 30%;
+  }
+  .target__section2 span {
+    margin: 15px 0 0 0;
+  }
+  .target__section2 button {
+    margin: 10px 0 50px 0;
   }
 }
 .target__section2 h1 {
@@ -99,7 +115,8 @@ body {
   color: #006970;
 }
 .target__section3 {
-  width: 333px;
+  min-width: 333px;
+  max-width: 100%;
   height: 500px;
   padding: 35px 45px;
   display: grid;
@@ -111,6 +128,13 @@ body {
 @media screen and (max-width: 1001px) {
   .target__section3 {
     height: 400px;
+    grid-template-rows: 10% 18% 35% 30%;
+  }
+  .target__section3 span {
+    margin: 15px 0 0 0;
+  }
+  .target__section3 button {
+    margin: 10px 0 50px 0;
   }
 }
 .target__section3 h1 {
@@ -147,8 +171,19 @@ body {
   .target {
     flex-direction: column;
     margin: 60px auto;
-    width: 333px;
+    width: 70%;
     grid-template-rows: 10% 25% 45% 25%;
+  }
+  .target__section1 {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+  }
+  .target__section2 {
+    border-bottom-right-radius: 0px;
+  }
+  .target__section3 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
   }
 }
 .attribution {

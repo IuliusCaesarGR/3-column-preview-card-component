@@ -42,7 +42,18 @@ body {
     .target{
         flex-direction: column;
         margin: 60px auto;
-        width: 333px;
+        width: 70%;
         grid-template-rows: 10% 25% 45% 25%;
+        &__section1{
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 5px;
+        }
+        &__section2{
+            border-bottom-right-radius: 0px;
+        }
+        &__section3{
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 5px;
+        }
     }
 }
